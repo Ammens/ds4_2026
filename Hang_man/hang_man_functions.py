@@ -255,7 +255,6 @@ class _Hangman(App[None], Hangman):
         input_widget.focus()
 
 if __name__ == "__main__":
-    # Example usage
     parser = argparse.ArgumentParser(description="Play Hangman in the terminal.")
     parser.add_argument("--word_file", "-w", type=str, default="word_list_prog.txt", help="Path to the word list file.")
     parser.add_argument(
@@ -270,10 +269,11 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     word_list = load_words(args.word_file)
+    
     if args.textual:
         hangman_app = _Hangman(word_list)
         hangman_app.run()
-    elif args.terminal:
+    else:
         hangman_game = Hangman(word_list)
         hangman_game.load_board()
         hangman_game.play()
