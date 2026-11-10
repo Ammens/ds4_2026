@@ -9,7 +9,12 @@
 
 <body>
     <h1>My Movie Database</h1>
-    <div><a href="{{ url_for('movies') }}">View Movies</a></div>
+    <div>
+        <ul>
+            <li><a href="{{ url_for('movies') }}">Movies</a></li>
+            <li><a href="{{ url_for('stars') }}">Stars</a></li>
+        </ul>
+    </div>
     <ul>
         {% for movie in rows %}
         <li>
@@ -23,5 +28,7 @@
         {% endfor %}
     </ul>
 </body>
+
+</html>
 
 </html>

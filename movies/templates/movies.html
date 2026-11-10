@@ -11,6 +11,7 @@
     <h1>My Movie Database</h1>
     <h2>Movies</h2>
     <p>Welcome to the Movie Database!</p>
+    <div><a href="{{ url_for('index') }}">Back to Home</a></div>
     <ul>
         {% for movie in rows %}
         <li>
@@ -24,5 +25,7 @@
         {% endfor %}
     </ul>
 </body>
+
+</html>
 
 </html>

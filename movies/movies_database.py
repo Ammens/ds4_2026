@@ -1,3 +1,4 @@
+""" Database operations for the movies app """
 import os
 import csv 
 
@@ -31,7 +32,3 @@ if __name__ == "__main__":
 
     stars_by_name = create_new_dictionary(stars_data, 'stage_name')
     print("Stars by Stage Name:", stars_by_name['Carrie Fisher'])
-    
-    
-
-        

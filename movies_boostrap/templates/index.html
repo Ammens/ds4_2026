@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+    <main class="container py-5 text-center">
+        <img
+            src="{{ url_for('static', filename='images/Logo7adb.png') }}"
+            alt="7th Art Database"
+            class="img-fluid mb-4"
+        >
+        <ul class="list-unstyled">
+            <li class="mb-2"><a href="{{ url_for('movies') }}">Movies</a></li>
+            <li><a href="{{ url_for('stars') }}">Stars</a></li>
+        </ul>
+    </main>
+{% endblock %}

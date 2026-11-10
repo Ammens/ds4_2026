@@ -33,9 +33,9 @@
                 <p><strong>Stars:</strong></p>
                 <ul>
                     {% for star in stars %}
-                    <li>
-                        {{ star.role }} - <a href="{{ star.wiki_url if star.wiki_url else 'https://en.wikipedia.org/wiki/Special:Search?search=' ~ (star.stage_name|trim) }}" target="_blank" rel="noopener noreferrer">{{ star.stage_name }}</a>
-                    </li>
+
+                    <li>{{ star.role }} - {{ star.stage_name }}</li>
+
                     {% endfor %}
                 </ul>
             </td>
